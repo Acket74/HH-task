@@ -69,7 +69,7 @@ class Travel {
     }
 
     public static double doTravel(@NotNull Car car, float innerLogicResult) {
-        return (car.amortizationCost() * car.koeff() + car.repairCost()) * innerLogicResult;
+        return ((double)car.amortizationCost() * car.koeff() + car.repairCost()) * innerLogicResult;
     }
 
 
