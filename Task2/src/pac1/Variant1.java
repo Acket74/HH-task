@@ -55,7 +55,7 @@ class Travel {
     }
 
     public static double doTravel(@NotNull Car car, float innerLogicResult){
-        return (car.getAmmortisationCost() * car.getCoeff() + car.getRepairCost()) * innerLogicResult;
+        return ((double)car.getAmmortisationCost() * car.getCoeff() + car.getRepairCost()) * innerLogicResult;
     }
 
 
