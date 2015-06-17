@@ -11,10 +11,14 @@ public class Main {
         //negative(highest bit is 1)
         //so using compliment transformation we getting a = 1010 => 0101 + 1 = 6
         int e = 0xfffffffa;
+        
+        //to prevent overflow use another type wiсh could store the summ of maximum integers:
+        long correctSum = (long)a + b;
 
         int c = a + b;
         System.out.println(a);
         System.out.println(c);
         System.out.println(e);
+        System.out.println(correctSum);
     }
 }
